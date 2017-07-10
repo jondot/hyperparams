@@ -45,12 +45,16 @@ And you can couple it with any validation library like `ajv` or `joi`.
 ## Strong params vs validation
 
 This is not a validation library. Hence, it will not check types, formats or
-any of that. If you need to do that, then you can use `ajv` or `joi`
-exclusively; they have features to remove excess properties for varying degrees
-of support.
+any of that. If you need to do that, then you can use vanilla object schema
+validation libraries like `ajv` or `joi`; they have features to remove excess properties
+for varying degrees of support.
 
-But note that if you don't need involved type validation, you'll pay with
-performance and developer experience (that's arguable of course).
+More importantly, you can decide that validation as a concerns sits in your model library in any case, and/or
+even (probably) database constraints.
+
+But note that if you don't need involved type validation at the request layer,
+and you still a validation library, you'll pay with performance and developer
+experience.
 
 Here are some numbers to get an idea about speed:
 
