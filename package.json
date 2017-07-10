@@ -1,0 +1,28 @@
+{
+  "name": "hyperparams",
+  "version": "1.0.2",
+  "description": "A fast, sandboxed matching engine with serializable rules",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watch",
+    "bench:all": "node src/__tests__/all.bench.js",
+    "bench": "node src/__tests__/index.bench.js"
+  },
+  "jest": {
+    "testMatch": [
+      "**/?(*.)(spec|test).js?(x)"
+    ]
+  },
+  "author": "Dotan Nahum <jondotan@gmail.com> (http://paracode.com)",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "ajv": "^5.2.1",
+    "benchmark": "^2.1.4",
+    "jest": "^19.0.2",
+    "joi": "^10.6.0"
+  }
+}

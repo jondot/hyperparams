@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`empty string root means shallow root object 1`] = `
+Object {
+  "token": 2,
+}
+`;
+
+exports[`flat props 1`] = `
+Object {
+  "age": 31,
+  "name": "joe",
+}
+`;
+
+exports[`flat w/object 1`] = `
+Object {
+  "meta": Object {
+    "agent": "superagent",
+  },
+  "total": 2,
+}
+`;
+
+exports[`missing but merged 1`] = `
+Object {
+  "bar": 2,
+  "baz": Object {
+    "poop": 3,
+  },
+  "foo": 1,
+}
+`;
+
+exports[`nested w/array 1`] = `
+Object {
+  "items": Array [
+    Object {
+      "title": "foobar",
+    },
+    Object {
+      "title": "goo!",
+    },
+  ],
+  "total": 2,
+}
+`;
+
+exports[`nested w/object 1`] = `
+Object {
+  "meta": Object {
+    "agent": "superagent",
+  },
+  "total": 2,
+}
+`;
+
+exports[`no props for nested array means verbatim array items 1`] = `
+Object {
+  "items": Array [
+    Object {
+      "_id": 1,
+      "title": "foobar",
+    },
+    Object {
+      "_id": 2,
+      "title": "goo!",
+    },
+  ],
+}
+`;
+
+exports[`no props given means everything 1`] = `
+Object {
+  "bar": 2,
+  "baz": Object {
+    "poop": 3,
+  },
+  "foo": 1,
+  "items": Array [
+    Object {
+      "_id": 1,
+      "title": "foobar",
+    },
+    Object {
+      "_id": 2,
+      "title": "goo!",
+    },
+  ],
+  "meta": Object {
+    "agent": "superagent",
+  },
+  "total": 2,
+}
+`;
