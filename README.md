@@ -6,6 +6,10 @@ A [strong params](http://edgeguides.rubyonrails.org/action_controller_overview.h
 
 ## Quickstart
 
+```
+$ yarn add hyperparams
+```
+
 Observe the following:
 
 ```javascript
