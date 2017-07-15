@@ -1,5 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`defaults should not override existing 1`] = `
+Object {
+  "total": 2,
+}
+`;
+
 exports[`empty string root means shallow root object 1`] = `
 Object {
   "token": 2,
@@ -72,11 +78,6 @@ Object {
 
 exports[`no props given means everything 1`] = `
 Object {
-  "bar": 2,
-  "baz": Object {
-    "poop": 3,
-  },
-  "foo": 1,
   "items": Array [
     Object {
       "_id": 1,

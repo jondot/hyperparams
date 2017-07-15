@@ -36,6 +36,8 @@ it('missing but merged', () =>
       baz: { poop: 3 },
     })(body)
   ).toMatchSnapshot())
+it('defaults should not override existing', () =>
+  expect(extract('posts', ['total'], { total: 500 })(body)).toMatchSnapshot())
 it('missing root throws', () =>
   expect(() => extract('foobar', ['baz'])(body)).toThrow())
 it('no props given means everything', () =>

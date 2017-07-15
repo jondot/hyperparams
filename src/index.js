@@ -82,7 +82,9 @@ const extractWithOpts = () => (root, shape, defaults = {}) => {
     if (!extracted) {
       extracted = onMissingRoot(extracted, root)
     }
-    return pick(L.isEmpty(defaults) ? extracted : L.merge(extracted, defaults))
+    return pick(
+      L.isEmpty(defaults) ? extracted : L.merge({}, defaults, extracted)
+    )
   }
 }
 
